@@ -1,0 +1,16 @@
+# Node.js 
+node_modules/
+dist/
+.cache/
+
+# TypeScript 
+*.js
+*.map
+
+# IDE
+.vscode/
+.idea/
+
+# Others 
+*.log
+*.swp

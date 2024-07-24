@@ -1,0 +1,18 @@
+service: get-sqs-message
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: us-east-1 # Replace with your region
+
+functions:
+  get-sqs-message:
+    handler: receiveMessage.receiveMessages
+    package:
+      include:
+        - dist/**
+  receiveMessage:
+    handler: receiveMessage.receiveMessages
+    package:
+      include:
+        - dist/**

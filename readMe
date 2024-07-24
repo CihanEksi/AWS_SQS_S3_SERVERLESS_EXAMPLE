@@ -1,0 +1,42 @@
+# AWS S3 - SQS - Serverless deployment 
+
+This repository contains examples of how to use Amazon SQS to send and receive messages.
+
+Examples:
+
+Sending a message to a queue: This example demonstrates how to send a message to an SQS queue using the AWS SDK for JavaScript.
+Receiving a message from a queue: This example demonstrates how to receive a message from an SQS queue using the AWS SDK for JavaScript.
+
+How to use:
+Clone the repository to your local machine.
+Install the required dependencies: npm install.
+
+Create an AWS account and configure your AWS credentials.
+Run the following commands to send and receive messages:
+
+change .env file values with your credentials
+
+Bash
+# Install Packages
+npm install
+
+# Send a message
+npm run send-message
+
+# Receive a message
+npm run get-message
+
+# lambda deployment 
+Bash
+
+serverless config credentials --provider aws
+
+serverless deploy
+
+
+
+# Note
+
+This is just a basic example. You can use Amazon SQS for a variety of other use cases, such as decoupling microservices, building serverless applications, and processing large volumes of data.
+
+You can you SQS for email sending, notification, trigger a lambda function, etc. It is totally up to you how you want to use it.
